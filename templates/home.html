@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main class="container mx-auto">
+        <div class="flex items-center justify-between">
+            <div>
+                <h1 class="font-bold text-2xl">Posts</h1>
+                <p class="text-sm text-zinc-600">The latest publications</p>
+            </div>
+    
+            <button class="border-0 bg-black text-white h-10 flex items-center justify-center rounded-lg px-4">Write a post</button>
+            
+
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div data-label='Post' class="flex flex-col gap-4 p-3 rounded-lg border border-zinc-300 bg-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2 ">
+                        <div class="w-8 h-8 bg-zinc-400 rounded-full"></div>
+
+                        <div>
+                            <p class="font-semibold text-base">User</p>
+                            <p>24.06.2026 19:21</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-200 py-0.5 px-2 rounded-full text-xs w-fit">0 comments</div>
+                </div>
+
+                <h4 class="text-xl font-bold">Lorem ipsum, dolor sit amet</h4>
+
+                <p class="text-sm text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia. At labore saepe aspernatur beatae, nisi mollitia amet architecto eum aliquam, voluptates quidem praesentium voluptas laborum esse rem quasi quos.</p>
+
+                <a href="/post_detail" class="text-blue-400 text-sm hover:underline">Read full</a>
+            </div>
+            
+
+            
+        </div>
+    </main>
+
+{% endblock%}
